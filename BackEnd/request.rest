@@ -1,0 +1,31 @@
+GET http://localhost:8000
+###
+
+POST http://localhost:8000/api/new
+Authorization:  Bearer  124578963
+Content-Type: application/json
+
+{
+    "message":"hello from amith, this is the first message",
+    "name":"arjun",
+    "timeStamp":"24-09-2022",
+    "received":true
+}
+###
+
+GET http://localhost:8000/api/messages
+###
+
+
+POST http://localhost:8000/api/add-user
+Authorization:  Bearer  124578963
+Content-Type: application/json
+
+{
+    "name":"amith",
+    "email":"amith@gmail.com",
+    "createAt":"24-09-2022",
+    "lastMeesage": "hello",
+    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfQDtO0vJ3KM0JqHV8YiRSgW-B4u71jkrrhw&usqp=CAU"
+}
+###
